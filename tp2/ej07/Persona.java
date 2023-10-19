@@ -6,20 +6,10 @@ public class Persona {
 	private String dni;
 	private Computadora computadora;
 
-	/*
-	public Persona() {
-		setNombre("");
-		setApellido("");
-		setDni("");
-		setComputadora(null);
-	}
-	*/
-	
-	public Persona(String nombre, String apellido, String dni, Computadora computadora) {
+	public Persona(String nombre, String apellido, String dni) {
 		setNombre(nombre);
 		setApellido(apellido);
 		setDni(dni);
-		setComputadora(computadora);
 	}
 
 	public String getNombre() {
@@ -27,7 +17,7 @@ public class Persona {
 	}
 
 	public void setNombre(String nombre) {
-		if (nombre != null) {
+		if (nombre != null && !nombre.isEmpty()) {
 			this.nombre = nombre;
 		}
 	}
@@ -37,7 +27,7 @@ public class Persona {
 	}
 
 	public void setApellido(String apellido) {
-		if (apellido != null) {
+		if (apellido != null && !apellido.isEmpty()) {
 			this.apellido = apellido;
 		}
 	}
@@ -47,7 +37,7 @@ public class Persona {
 	}
 
 	public void setDni(String dni) {
-		if (dni != null) {
+		if (dni != null && !dni.isEmpty()) {
 			this.dni = dni;
 		}
 	}
@@ -63,10 +53,15 @@ public class Persona {
 	}
 
 	public void trabajar() {
-		System.out.println("Trabajando...");
+		System.out.println(nombre + " está trabajando");
 	}
 
 	public void descansar() {
-		System.out.println("Descansando...");
+		System.out.println(nombre + " está descansando");
+	}
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", apellido=" + apellido + ", dni=" + dni + "]";
 	}
 }
