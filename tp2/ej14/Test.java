@@ -20,7 +20,7 @@ public class Test {
 		}
 
 		System.out.printf("La nota promedio es %.2f", promedio.obtenerValor());
-		// System.out.println("La nota promedio es " + String.format("%.2f", promedio.obtenerValor()));
+		// System.out.println(String.format("La nota promedio es  %.2f", promedio.obtenerValor()));
 	}
 
 	private static double cargarNota() {
