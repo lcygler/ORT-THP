@@ -15,6 +15,6 @@ public class Test {
 
 	private static void mostrarResultado(SuperHeroe superHeroe1, SuperHeroe superHeroe2) {
 		String resultado = superHeroe1.competir(superHeroe2);
-		System.out.println(superHeroe1.getNombre() + " vs " + superHeroe2.getNombre() + ": " + resultado);
+		System.out.println(superHeroe1.getNombre() + " vs. " + superHeroe2.getNombre() + ": " + resultado);
 	}
 }
