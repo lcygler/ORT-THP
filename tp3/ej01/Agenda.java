@@ -34,6 +34,9 @@ public class Agenda {
 		if (persona == null) {
 			persona = new Persona(dni, nombre, apellido, domicilio);
 			personaAgregada = personas.add(persona);
+			System.out.println("Se ha agregado la persona");
+		} else {
+			System.out.println("La persona ya existe");
 		}
 
 		return personaAgregada;
@@ -44,6 +47,9 @@ public class Agenda {
 
 		if (persona != null) {
 			personas.remove(persona);
+			System.out.println("Se ha eliminado la persona");
+		} else {
+			System.out.println("La persona no existe");
 		}
 
 		return persona;
@@ -56,6 +62,9 @@ public class Agenda {
 		if (persona != null) {
 			persona.setDomicilio(domicilio);
 			domicilioModificado = true;
+			System.out.println("Se ha modificado el domicilio");
+		} else {
+			System.out.println("La persona no existe");
 		}
 
 		return domicilioModificado;
@@ -72,13 +81,15 @@ public class Agenda {
 	}
 
 	public Persona devolverUltimo() {
-		Persona ultimo = null;
+		Persona ultimaPersona = null;
 
 		if (!personas.isEmpty()) {
-			ultimo = personas.get(personas.size() - 1);
+			ultimaPersona = personas.get(personas.size() - 1);
+		} else {
+			System.out.println("La agenda está vacía");
 		}
 
-		return ultimo;
+		return ultimaPersona;
 	}
 
 	public void eliminarTodosElementosAMano() {
