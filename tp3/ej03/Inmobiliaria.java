@@ -66,7 +66,7 @@ public class Inmobiliaria {
 	}
 
 	/*
-	// Recorrer lista de barrios 2 veces
+	// Usar 2 "for" para recorrer la lista de barrios
 	private ArrayList<Barrio> obtenerBarrioMaxProp() {
 		int maximo = 0;
 		ArrayList<Barrio> barriosMaxProp = new ArrayList<>();
