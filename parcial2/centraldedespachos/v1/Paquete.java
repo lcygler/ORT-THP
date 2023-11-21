@@ -1,4 +1,4 @@
-package parcial2.centraldedespachos;
+package parcial2.centraldedespachos.v1;
 
 public class Paquete {
 	static private int numerador = 0;

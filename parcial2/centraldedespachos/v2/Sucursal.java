@@ -1,4 +1,4 @@
-package parcial2.centraldedespachos;
+package parcial2.centraldedespachos.v2;
 
 public enum Sucursal {
 	RETIRO,
